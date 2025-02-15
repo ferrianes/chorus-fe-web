@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
+import './shared/styles/globals.css'
 import { BrowserRouter, Route, Routes } from 'react-router'
 import { Register } from './pages/auth/register/page'
 import { Layout as AuthLayout } from './pages/auth/layout'

@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@theme {
+  /* Typography */
+  --text-heading-1: 3rem;
+  --text-heading-1--line-height: 3.3rem;
+  --text-heading-1--font-weight: 600;
+
+  --text-heading-2: 2.5rem;
+  --text-heading-2--line-height: 2.75rem;
+  --text-heading-2--font-weight: 600;
+
+  --text-heading-3: 2rem;
+  --text-heading-3--line-height: 2.2rem;
+  --text-heading-3--font-weight: 600;
+
+  --text-heading-4: 1.5rem;
+  --text-heading-4--line-height: 1.8rem;
+  --text-heading-4--font-weight: 600;
+
+  --text-heading-5: 1.25rem;
+  --text-heading-5--line-height: 1.5rem;
+  --text-heading-5--font-weight: 600;
+
+  --text-heading-6: 1.125rem;
+  --text-heading-6--line-height: 1.35rem;
+  --text-heading-6--font-weight: 600;
+  
+  --text-body-bold-weight: 700;
+  --text-body-semibold-weight: 600;
+  --text-body-medium-weight: 500;
+  --text-body-regular-weight: 400;
+
+  --text-body-bold-xl: 1.125rem;
+  --text-body-bold-xl--line-height: 1.575rem;
+  --text-body-bold-xl--font-weight: 700;
+
+  --text-body-semibold-xl: 1.125rem;
+  --text-body-semibold-xl--line-height: 1.575rem;
+  --text-body-semibold-xl--font-weight: 600;
+
+  --text-body-medium-xl: 1.125rem;
+  --text-body-medium-xl--line-height: 1.575rem;
+  --text-body-medium-xl--font-weight: 500;
+  
+  --text-body-regular-xl: 1.125rem;
+  --text-body-regular-xl--line-height: 1.575rem;
+  --text-body-regular-xl--font-weight: 400;
+
+  --text-body-bold-lg: 1rem;
+  --text-body-bold-lg--line-height: 1.4rem;
+  --text-body-bold-lg--font-weight: 700;
+
+  --text-body-semibold-lg: 1rem;
+  --text-body-semibold-lg--line-height: 1.4rem;
+  --text-body-semibold-lg--font-weight: 600;
+
+  --text-body-medium-lg: 1rem;
+  --text-body-medium-lg--line-height: 1.4rem;
+  --text-body-medium-lg--font-weight: 500;
+
+  --text-body-regular-lg: 1rem;
+  --text-body-regular-lg--line-height: 1.4rem;
+  --text-body-regular-lg--font-weight: 400;
+
+  --text-body-bold-md: 0.875rem;
+  --text-body-bold-md--line-height: 1.225rem;
+  --text-body-bold-md--font-weight: 700;
+
+  --text-body-semibold-md: 0.875rem;
+  --text-body-semibold-md--line-height: 1.225rem;
+  --text-body-semibold-md--font-weight: 600;
+
+  --text-body-medium-md: 0.875rem;
+  --text-body-medium-md--line-height: 1.225rem;
+  --text-body-medium-md--font-weight: 500;
+
+  --text-body-regular-md: 0.875rem;
+  --text-body-regular-md--line-height: 1.225rem;
+  --text-body-regular-md--font-weight: 400;
+
+  --text-body-bold-sm: 0.75rem;
+  --text-body-bold-sm--line-height: 0.9075rem;
+  --text-body-bold-sm--font-weight: 700;
+
+  --text-body-semibold-sm: 0.75rem;
+  --text-body-semibold-sm--line-height: 0.9075rem;
+  --text-body-semibold-sm--font-weight: 600;
+
+  --text-body-medium-sm: 0.75rem;
+  --text-body-medium-sm--line-height: 0.9075rem;
+  --text-body-medium-sm--font-weight: 500;
+
+  --text-body-regular-sm: 0.75rem;
+  --text-body-regular-sm--line-height: 0.9075rem;
+  --text-body-regular-sm--font-weight: 400;
+
+  --text-body-bold-xs: 0.625rem;
+  --text-body-bold-xs--line-height: 0.75625rem;
+  --text-body-bold-xs--font-weight: 700;
+
+  --text-body-semibold-xs: 0.625rem;
+  --text-body-semibold-xs--line-height: 0.75625rem;
+  --text-body-semibold-xs--font-weight: 600;
+
+  --text-body-medium-xs: 0.625rem;
+  --text-body-medium-xs--line-height: 0.75625rem;
+  --text-body-medium-xs--font-weight: 500;
+
+  --text-body-regular-xs: 0.625rem;
+  --text-body-regular-xs--line-height: 0.75625rem;
+  --text-body-regular-xs--font-weight: 400;
+}
