@@ -25,21 +25,19 @@ function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
   )
 }
 
-function CardTitle({ className, ...props }: React.ComponentProps<"div">) {
+function CardTitle({ ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="card-title"
-      className={className}
       {...props}
     />
   )
 }
 
-function CardDescription({ className, ...props }: React.ComponentProps<"div">) {
+function CardDescription({ ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="card-description"
-      className={className}
       {...props}
     />
   )
