@@ -1,23 +1,17 @@
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import { z } from "zod"
-
-const FormSchema = z.object({
-  email: z.string().email(),
-  password: z.string().nonempty(),
-}).required()
+import { RegisterFormValues, useRegisterForm } from "./use-register-form";
+import { useRegisterMutation } from "./use-register-mutation";
 
 const useRegister = () => {
-  const form = useForm<z.infer<typeof FormSchema>>({
-    resolver: zodResolver(FormSchema),
-    defaultValues: {
-      email: "",
-      password: "",
-    }
-  });
+  const { form } = useRegisterForm()
 
-  function onSubmit(data: z.infer<typeof FormSchema>) {
-    console.log(data)
+  const { mutateAsync } = useRegisterMutation()
+
+  async function onSubmit(data: RegisterFormValues) {
+    try {
+      await mutateAsync(data)
+    } catch (error) {
+      console.error(error)
+    }
   }
 
   return {
@@ -26,4 +20,4 @@ const useRegister = () => {
   }
 }
 
-export { useRegister }
+export { useRegister };
