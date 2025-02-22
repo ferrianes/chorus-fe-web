@@ -4,14 +4,10 @@ import { useMutation } from "../service/mutation"
 const useRegister = () => {
   const { form } = useForm()
 
-  const { mutateAsync } = useMutation()
+  const { mutate } = useMutation()
 
   async function onSubmit(data: RegisterFormValues) {
-    try {
-      await mutateAsync(data)
-    } catch (error) {
-      console.error(error)
-    }
+    mutate(data)
   }
 
   return {

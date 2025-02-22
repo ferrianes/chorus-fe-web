@@ -18,6 +18,13 @@ function Register() {
           <form onSubmit={form.handleSubmit(onSubmit)} className='flex flex-col gap-y-4'>
             <FormInput
               control={form.control}
+              name="name"
+              label="Name"
+              placeholder="Enter your email"
+            />
+
+            <FormInput
+              control={form.control}
               name="email"
               label="Email"
               placeholder="Enter your email"
@@ -28,6 +35,13 @@ function Register() {
               name="password"
               label="Password"
               placeholder="Enter your password"
+            />
+
+            <FormInput
+              control={form.control}
+              name="passwordConfirmation"
+              label="Password Confirmation"
+              placeholder="Enter your password again"
             />
 
             <Button color="primary" size='md' type="submit">Submit</Button>
