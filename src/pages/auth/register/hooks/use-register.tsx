@@ -1,10 +1,10 @@
-import { RegisterFormValues, useRegisterForm } from "./use-register-form";
-import { useRegisterMutation } from "./use-register-mutation";
+import { RegisterFormValues, useForm } from "../service/form"
+import { useMutation } from "../service/mutation"
 
 const useRegister = () => {
-  const { form } = useRegisterForm()
+  const { form } = useForm()
 
-  const { mutateAsync } = useRegisterMutation()
+  const { mutateAsync } = useMutation()
 
   async function onSubmit(data: RegisterFormValues) {
     try {
