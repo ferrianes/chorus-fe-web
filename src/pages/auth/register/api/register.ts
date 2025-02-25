@@ -6,7 +6,7 @@ export type RegisterResponse = {
   message: string;
 };
 
-type RegisterProps = {
+type RegisterParams = {
   name: string;
   email: string;
   password: string;
@@ -16,7 +16,7 @@ const register = async ({
   name,
   email,
   password,
-}: RegisterProps): Promise<AxiosResponse<RegisterResponse>> => {
+}: RegisterParams): Promise<AxiosResponse<RegisterResponse>> => {
   return axios.post('/register', {
     name,
     email,
@@ -25,4 +25,4 @@ const register = async ({
 };
 
 
-export default register;
+export { register };

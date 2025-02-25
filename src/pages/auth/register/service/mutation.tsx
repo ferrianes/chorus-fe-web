@@ -1,7 +1,7 @@
 'use client'
 
 import { useMutation as useTanstackMutation } from "@tanstack/react-query";
-import register from "../api/register";
+import { register } from "../api/register";
 import { isAxiosError } from "axios";
 import { ErrorResponse } from "@/shared/types";
 import { toast } from "sonner";
