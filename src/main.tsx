@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router'
 import { Register } from './pages/auth/register/page'
 import { AuthLayout } from './pages/auth/layout'
 import { RootLayout } from './pages/layout'
+import { Login } from './pages/auth/login/page'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -12,7 +13,8 @@ createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route element={<RootLayout />}>
           <Route element={<AuthLayout />}>
-            <Route index element={<Register />} />
+            <Route path='register' element={<Register />} />
+            <Route path='login' element={<Login />} />
           </Route>
         </Route>
       </Routes>
